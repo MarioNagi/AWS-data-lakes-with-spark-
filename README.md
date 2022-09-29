@@ -7,8 +7,8 @@ Project Structure
 
 Spark and Data Lake
 
-|____etl.py              # ETL builder
-|____dl.cfg              # AWS configuration file
+sparkify.ipynb              # ETL builder
+dl.cfg                      # AWS configuration file
 
 
 # How to Run
