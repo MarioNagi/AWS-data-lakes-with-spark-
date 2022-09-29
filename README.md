@@ -3,11 +3,13 @@
 # Project: Spark and Data Lake
 
 This project builds an ETL pipeline for a data lake. The data resides in S3, in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in the app. We loaded data from S3, process the data into analytics tables using Spark, and load them back into S3.
-Project Structure
+
+## Project Structure
 
 Spark and Data Lake
 
 sparkify.ipynb              # ETL builder
+
 dl.cfg                      # AWS configuration file
 
 
@@ -39,51 +41,56 @@ ELT pipeline builder
 
 ### songplays table
 
-songplays 	type
-songplay_id 	INT
-start_time 	TIMESTAMP
-user_id 	INT
-level 	VARCHAR
-song_id 	VARCHAR
-artist_id 	VARCHAR
-session_id 	INT
-location 	TEXT
-user_agent 	TEXT
+|songplays| 	type|
+|--------|----------|
+|songplay_id |	INT|
+|start_time |	TIMESTAMP|
+|user_id 	|INT|
+|level 	|VARCHAR|
+|song_id 	|VARCHAR|
+|artist_id |	VARCHAR|
+|session_id 	|INT|
+|location |	TEXT|
+|user_agent |	TEXT|
 
 ### user table
 
-users 	type
-user_id 	INT
-first_name 	VARCHAR
-last_name 	VARCHAR
-gender 	CHAR(1)
-level 	VARCHAR
+|users |	type|
+|---------|--------|
+|user_id |	INT|
+|first_name |	VARCHAR|
+|last_name |	VARCHAR|
+|gender |	CHAR(1)|
+|level |	VARCHAR|
 
 ### songs table
 
-songs 	type
-song_id 	VARCHAR
-title 	VARCHAR
-artist_id 	VARCHAR
-year 	INT
-duration 	FLOAT
+|songs |	type|
+|---------|--------|
+|song_id |	VARCHAR|
+|title |	VARCHAR|
+|artist_id |	VARCHAR|
+|year |	INT|
+|duration |	FLOAT|
 
 ### artists table
 
-artists 	type
-artist_id 	VARCHAR
-name 	VARCHAR
-location 	TEXT
-latitude 	FLOAT
-logitude 	FLOAT
+|artists |	type|
+|---------|--------|
+|artist_id| 	VARCHAR|
+|name |	VARCHAR|
+|location |	TEXT|
+|latitude |	FLOAT|
+|logitude |	FLOAT|
 
 ### time table
 
-time 	type
-start_time 	TIMESTAMP
-hour 	INT
-day 	INT
-week 	INT
-month 	INT
-year 	INT
-weekday 	VARCHAR
+|time |	type|
+|---------|--------|
+|start_time |	TIMESTAMP|
+|hour 	|INT|
+|day 	|INT|
+|week 	|INT|
+|month 	|INT|
+|year 	|INT|
+|weekday |	VARCHAR|
