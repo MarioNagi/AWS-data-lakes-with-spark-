@@ -6,33 +6,26 @@ This project builds an ETL pipeline for a data lake. The data resides in S3, in 
 Project Structure
 
 Spark and Data Lake
+
 |____etl.py              # ETL builder
 |____dl.cfg              # AWS configuration file
-|____test.ipynb          # testing
+
 
 # How to Run
 
-    Add AWS credentials and S3 target bucket endpoint in dl.cfg
+    Add AWS credentials in dl.cfg
 
     Please do not put your access/secret key in public
 
     [AWS]
     AWS_ACCESS_KEY_ID = [your access key]
     AWS_SECRET_ACCESS_KEY = [your secret key]
+    
+    first, you run EMR cluster (using 1 Master node and 2 Core nodes), then run Pyspark notebook via JupyterLab and the following notebook
 
-    [S3]
-    SOURCE_S3_BUCKET = s3a://udacity-dend/
-    DEST_S3_BUCKET = [your S3 endpoint]
-
-    In the terminal, install pyspark and run etl.py python script
-
-    pip install pyspark
-    python3 etl.py
-
-    Test and check the results by directly running test.ipynb jupyter notebook
 
 # ELT Pipeline
-etl.py
+sparkify.ipynb
 
 ELT pipeline builder
 
