@@ -36,3 +36,54 @@ ELT pipeline builder
         Load raw data from S3 buckets to Spark stonealone server and Process event(log) dataset to insert record into time and users dimensio table and songplays fact table
 
 # Database Schema
+
+### songplays table
+
+songplays 	type
+songplay_id 	INT
+start_time 	TIMESTAMP
+user_id 	INT
+level 	VARCHAR
+song_id 	VARCHAR
+artist_id 	VARCHAR
+session_id 	INT
+location 	TEXT
+user_agent 	TEXT
+
+### user table
+
+users 	type
+user_id 	INT
+first_name 	VARCHAR
+last_name 	VARCHAR
+gender 	CHAR(1)
+level 	VARCHAR
+
+### songs table
+
+songs 	type
+song_id 	VARCHAR
+title 	VARCHAR
+artist_id 	VARCHAR
+year 	INT
+duration 	FLOAT
+
+### artists table
+
+artists 	type
+artist_id 	VARCHAR
+name 	VARCHAR
+location 	TEXT
+latitude 	FLOAT
+logitude 	FLOAT
+
+### time table
+
+time 	type
+start_time 	TIMESTAMP
+hour 	INT
+day 	INT
+week 	INT
+month 	INT
+year 	INT
+weekday 	VARCHAR
